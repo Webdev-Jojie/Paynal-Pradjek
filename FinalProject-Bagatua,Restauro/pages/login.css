@@ -1,0 +1,30 @@
+.loginform {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+.loginform h1 {
+    margin-bottom: 20px;
+}
+.loginform input {
+    margin: 10px 0 20px 0;
+    font-size: 1.3rem;
+    padding: 10px;
+    border: 1px solid #8de12f;
+}
+.loginform button {
+    padding: 5px;
+    font-size: 1.5rem;
+    color: #8de12f;
+    background-color: white;
+    border: 1px solid #8de12f;
+}
+.loginform input:hover,.loginform button:hover,.loginform input:focus {
+    border: 1px solid #000180;
+    color: #000180;
+}
+header nav .current {
+    border-bottom: 5px solid #8de12f;
+}
