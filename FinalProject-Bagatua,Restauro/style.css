@@ -1,0 +1,747 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+a,button {
+    cursor: pointer;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav {
+    width: 65vw;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbutton {
+    height: 80px;
+    width: 100%;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-bottom: 5px solid #8de12f;
+}
+#navbutton:hover {
+    color: white;
+    background-color: rgb(61, 61, 61);
+}
+header nav span {
+    height: 30px;
+    width: 1px;
+    background-color: rgb(177, 177, 177);
+}
+header nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(61, 61, 61);
+    font-size: 1.2rem;
+    height: 100%;
+    border-bottom: 5px solid white;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+
+}
+header nav a i {
+    font-size: 2rem;
+}
+header nav .current {
+    border-bottom: 5px solid #8de12f;
+}
+header nav a:hover {
+    color: #8de12f;
+    border-bottom: 5px solid #8de12f;
+}
+#wika {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+#wika span small:first-child {
+    font-size: 10px;
+}
+#wika img {
+    height: 10px;
+}
+
+ /* Main Container */
+
+.maincontainer {
+    height: 820px;
+    background-image: url(assets/image1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+a:hover.set-appointment{
+    background-color: #1010b8;
+}
+.main_logo {
+    width: 300px;
+}
+.maincontainer section {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.mainsec1 {
+    align-items: center;
+}
+.mainsec1 h1 {
+    font-size: 3rem;
+    color: #000180;
+}
+.mainsec1 h2 {
+    color: #8de12f;
+    font-size: 2.5rem;
+}
+.mainsec2 h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(61, 61, 61);
+}
+.mainsec2 h1 {
+    font-size: 5rem;
+    color: #8de12f;
+}
+.mainsec2 span {
+    color: #000180;
+}
+.mainsec2 a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: max(300px,50%);
+    border-left: 8px solid #8de12f;
+    background-color: #000180;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+
+/* Services Container */
+
+.servicescontainer {
+    padding: 5vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7f6;
+}
+.servicestext {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.servicestext h1 {
+    font-size: 2.5rem;
+    color: #8de12f;
+}
+.servicestext span {
+    color: rgb(61, 61, 61);
+}
+.servicestext p {
+    width: 800px;
+    line-height: 30px;
+    font-size: 1.1rem;
+    color: rgb(61, 61, 61);
+}
+.servicestext a {
+    color: #7a2242;
+}
+.servicestext .fa-solid {
+    font-size: 10px;
+}
+.servicesoptions {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 100px;
+    color: rgb(61, 61, 61);
+}
+.servicesoptions div {
+    background-color: white;
+    padding: 0 30px 20px;
+    width: 400px;
+    height: 250px;
+}
+.servicesoptions span {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.servicesoptions b {
+    font-size: 2rem;
+    padding: 20px;
+    background-color: #000070;
+    border-radius: 40px;
+    color: white;
+    position: relative;
+    left: -75px;
+    top: -10px;
+}
+.servicesoptions p {
+    margin-top: 10px;
+    line-height: 25px;
+    height: 100%;
+}
+.servicesoptions a {
+    color: #8de12f;
+    font-size: 15px;
+}
+.servicesoptions .fa-solid {
+    font-size: 8px;
+    position: relative;
+    bottom: 2px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000180;
+}
+footer * {
+    color: white;
+}
+footer div {
+    display: flex;
+    background-color: #8de12f;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 100%;
+}
+footer nav {
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer nav a {
+    font-size: 1.3rem;
+    width: 150px;
+    height: 50px;
+}
+footer nav .open {
+    text-decoration: underline;
+}
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 20px;
+}
+footer span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+footer .fspan1 {
+    width: 600px;
+    flex-wrap: wrap;
+}
+footer .fspan2 {
+    width: 200px;
+}
+footer .fspan2 .fa-brands {
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .fa-facebook-f {
+    background-color: #3b5998;
+}
+footer .fa-twitter {
+    background-color: #55acee;
+}
+footer .fspan3 {
+    width: 240px;
+}
+footer .fspan3 b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    background-color: #000070;
+    width: 120px;
+}
+
+/* Referral Container */
+
+.referralscontainer {
+    padding: 5vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.refer1 {
+    background-image: url(assets/image2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 650px;
+    width: 700px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+.refer1 div {
+    background-color: #000070;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.refer1 div:hover{
+    background-color: #1010b8;
+}
+.refer1 h1 {
+    font-size: 1.5rem;
+}
+.refer1 span {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#referrals {
+    height: 125px;
+    width: 70%;
+    padding-left: 60px;
+    cursor: pointer;
+}
+#referrals a {
+    background-color: #8de12f;
+    color: white;
+    font-size: 2rem;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#insurance {
+    width: 30%;
+    height: 250px;
+    border-top: 10px solid #8de12f;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    right: min(-720px,-39vw);
+    cursor: pointer;
+}
+#insurance a {
+    color: white;
+    font-size: 2rem;
+}
+.refer2 {
+    padding: 0 2.9vw;
+    width: 650px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.refer2 h1 {
+    color: #8de12f;
+    font-size: 2.7rem;
+}
+.refer2 h1 span {
+    color: rgb(61, 61, 61);
+}
+.refer2 p {
+    height: 70%;
+    color: rgb(61, 61, 61);
+    line-height: 35px;
+    font-size: 1.2rem;
+}
+.referphotos {
+    height: 200px;
+    padding: 20px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: -150px;
+    bottom: 66px;
+}
+.referphotos img {
+    height: 150px;
+    width: 175px;
+}
+
+/* Message Container */
+
+.message {
+    background-color: #f5f7f6;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dmform {
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#dmform * {
+    height: 60px;
+    font-size: 1.2rem;
+    border: none;
+}
+#dmform input {
+    margin: 10px;
+    width: 250px;
+    padding: 0 10px;
+}
+#quickmessage {
+    width: 350px !important;   
+}
+#dmform button {
+    margin: 10px;
+    width: 250px;
+    border-left: 10px solid #8de12f;
+    background-color: #000070;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dmform button:hover{
+    background-color: #1010b8;
+}
+#dmform button .fa-solid {
+    height: fit-content;
+    margin-left: 30px;
+    color: #ce9a46;
+}
+.getintouch {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    align-items: center;
+    text-align: center;
+}
+.getbackground {
+    position: absolute;
+    background-image: url(assets/image3.jpg);
+    background-position: center -380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+.touch {
+    height: 680px;
+    z-index: 1;
+    background-color: white;
+    width: 650px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(61, 61, 61);
+    position: relative;
+    top: 20px;
+}
+.touch img {
+    width: 80px;
+}
+.touch h1 {
+    font-size: 3rem;
+}
+.touch h2 {
+    font-size: 2rem;
+}
+.touch h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #8de12f;
+}
+.touch p {
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+@media (max-width: 1600px) {
+    .servicesoptions {
+        flex-direction: column;
+        align-items: center;
+        height: 800px;
+        margin-top: max(65px,3vw);
+    }
+    .servicestext {
+        flex-direction: column;
+        height: 130px;
+    }
+}
+@media (max-width: 1550px) {
+    .referralscontainer {
+        flex-direction: column;
+    }
+    #insurance {
+        right: 0;
+    }
+    .refer1 {
+        margin-bottom: 20px;
+    }
+    .referphotos {
+        left: auto;
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media (max-width: 1275px) {
+    header nav {
+        width: 75vw;
+    }
+    #dmform {
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #dmform input,#dmform button {
+        width: max(30px,45%) !important;
+    }
+}
+@media (max-width: 1050px) {
+    header {
+        flex-direction: column;
+    }
+    header nav {
+        width: 90%;
+    }
+    #wika {
+        margin: 20px;
+    }
+
+    /* Services Container */
+
+    .servicestext p {
+        width: max(330px,80%);
+    }
+
+    /* footer */
+
+    footer div {
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px 0;
+    }
+    footer nav {
+        margin-top: 20px;
+        width: max(300px,55%);
+    }
+    footer section span {
+        height: 40px;
+    }
+    footer .fspan3 b {
+        height: 100%;
+    }
+}
+@media (min-width: 801px) {
+    #navbutton {
+        display: none;
+    }
+    header nav .current i {
+    color: yellowgreen;
+    }
+}
+@media (max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
+        align-items: normal;
+        justify-content: space-between;
+    }
+    header nav span {
+        display: none;
+    }
+    header nav {
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+    }
+    header nav a {
+        width: 100%;
+        height: 80px;
+        border-bottom: 5px solid yellowgreen;
+    }
+    header nav a:hover {
+        color:  #000180;
+        border-bottom: 5px solid yellowgreen;
+    }
+    header nav .current {
+        border-bottom: 5px solid yellowgreen;
+        color: yellowgreen;
+    }
+    header nav .current:hover {
+        color: #000180;
+    }
+    #wika {
+        display: none;
+    }
+    .maincontainer {
+        width: 100%;
+        padding: 0 30px;
+        align-items: center;
+        text-align: center;
+    }
+    .mainsec1 h1 {
+        font-size: max(2rem,6vw);
+    }
+    .mainsec1 h2 {
+        font-size: max(1.7rem,5vw);
+    }
+    .mainsec2 {
+        align-items: center;
+    }
+    .mainsec2 h1 {
+        font-size: max(2.5rem,10vw);
+    }
+    .mainsec2 h2 {
+        font-size: max(1.7rem,5vw);
+    }
+
+    /* Referrals Container */
+
+    .refer1 {
+        width: 90%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #referrals, #insurance{
+        width: 100%;
+        height: 125px;
+        border: 0;
+        padding-left: 6vw;
+        justify-content: space-between;
+    }
+    #referrals, #insurance  {
+        flex-direction: row;
+    }
+    #insurance a {
+        background-color: #8de12f;
+        color: white;
+        font-size: 2rem;
+        width: 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #insurance br {
+        display: none;
+    }
+    .refer2 {
+        width: max(340px,90%);
+        height: fit-content;
+    }
+    .referphotos {
+        bottom: 0;
+        padding: 0;
+    }
+
+    /* footer */
+
+    footer img {
+        height: max(75px,14vw);
+    }
+    footer .fspan1 {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 650px) {
+    .referphotos {
+        display: none;
+    }
+    #dmform {
+        width: max(340px,90%);
+        flex-direction: column;
+        align-items: center;
+        height: 280px;
+    }
+    #dmform input, #dmform button {
+        width: max(340px,90%) !important;
+        margin: 0;
+
+    }
+    .touch {
+        width: 100%;
+        padding: 5vw;
+    }
+}
+@media (max-width: 500px) {
+    .maincontainer {
+        padding: 0 10px;
+    }
+
+    /* Services Container */
+
+    .servicesoptions div {
+        padding: 0 20px 10px;
+        width: max(300px,80vw);
+    }
+    .servicesoptions b {
+        left: -50px;
+        padding: max(10px,3.5vw);
+    }
+
+}
+@media (max-width:578px) {
+    footer .fspan1 {
+        height: fit-content;
+    }
+    footer li {
+        white-space: wrap;
+    }
+    .referralscontainer {
+        padding: 10px 0;
+    }
+    #referrals, #insurance{
+        flex-direction: column;
+        padding: 10px 0 0 0;
+    }
+    #referrals a, #insurance a {
+        width: 100%;
+        height: 30px;
+    }
+    #insurance br {
+        display: block;
+    }
+
+}
