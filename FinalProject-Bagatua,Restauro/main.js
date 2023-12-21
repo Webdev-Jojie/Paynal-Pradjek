@@ -1,3 +1,15 @@
+var x = document.getElementById("headernav");
+
+function burger() {
+    // var state = 1;
+    if (x.style.display === "flex") {
+        x.style.display = "none";
+    }
+    else {
+        x.style.display = "flex";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll('a[href^="#"]');
     
